@@ -2,9 +2,9 @@
 ## Summary
 This project examines political violence in Ukraine from 2018 to the present day and focuses on civilian targeting during Russia’s full-scale invasion starting in 2022. The analysis shows that Russia’s civilian targeting increases in the areas tthey lose in the battle. The regions with only remote violence  experience higher percentages of civilian targeting than the ones engaged in the battles. The project concludes that Russia delibertely targets civilians in Ukraine. 
 ## Input Data
-There are two input files for this project. The data for the project was taken from The Armed Conflict Location & Event Data (ACLED’s) Ukraine Conflict Monitor that provides near real-time data on the war (https://acleddata.com/ukraine-conflict-monitor/#data). 
+There are two input files for this project. The data for the project was taken from [The Armed Conflict Location & Event Data (ACLED’s) Ukraine Conflict Monitor](https://acleddata.com/ukraine-conflict-monitor/#data) that provides near real-time data on the war. 
 The dataset **“Ukraine_Black_Sea_2020_2023_Mar24.xlsx”** includes information of event types from 2018 to March 24, 2023 in Ukraine and near Black Sea. 
-The second input file is a shapefile of Ukraine **“stanford-gg870xt4706-shapefile.zip”** taken from the University of Texas at Austin and is used to create maps (https://geodata.lib.utexas.edu/catalog/stanford-gg870xt4706). 
+The second input file is a [shapefile of Ukraine](https://geodata.lib.utexas.edu/catalog/stanford-gg870xt4706) **“stanford-gg870xt4706-shapefile.zip”** taken from the University of Texas at Austin and is used to create maps. 
 ## Outputs
 1.	Three scripts that should be run in the following order:
   - The first script, called **ukraine_fulldata.py** that reads data from the first input file (“Ukraine_Black_Sea_2020_2023_Mar24.xlsx”). The script cleans the data to include only events related to political violence in Ukraine, without riots, and filters the data to include events occurring on or after February 24, 2022. The script then saves the cleaned data to a CSV file and creates several visualizations, including a time series graph showing political violence over the years in the most affected regions, a time series graph showing political violence for months, and a stacked bar graph of event types during the full-scale war in Ukraine.
