@@ -1,6 +1,8 @@
 # Analysis of Russia's Invasion of Ukraine
+
 ## Summary
-This project examines political violence in Ukraine from 2018 to the present day and focuses on civilian targeting during Russia’s full-scale invasion starting in 2022. The analysis shows that Russia’s civilian targeting increases in the areas tthey lose in the battle. The regions with only remote violence  experience higher percentages of civilian targeting than the ones engaged in the battles. The project concludes that Russia delibertely targets civilians in Ukraine. 
+This project examines political violence in Ukraine from 2018 to the present day and focuses on civilian targeting during Russia’s full-scale invasion starting in 2022. The analysis shows that Russia’s civilian targeting increases in the areas tthey lose in the battle. The regions with only remote violence  experience higher percentages of civilian targeting than the ones engaged in the battles. The project concludes that Russia delibertely targets civilians in Ukraine.
+
 ## Input Data
 There are two input files for this project. The data for the project was taken from [The Armed Conflict Location & Event Data (ACLED’s) Ukraine Conflict Monitor](https://acleddata.com/ukraine-conflict-monitor/#data) that provides near real-time data on the war. 
 The dataset **“Ukraine_Black_Sea_2020_2023_Mar24.xlsx”** includes information of event types from 2018 to March 24, 2023 in Ukraine and near Black Sea. 
@@ -55,5 +57,3 @@ Kyiv, the region of the capital has almost 64% of civilian targeting, meaning Ru
 ![Percentage by region map](https://github.com/yubychko/warinukraine/blob/images/civilian_targeting_percentage.png)
 
 In conclusion, this research shows that Russia deliberately targets civilians in its ulawful war in Ukraine. Civilian targeting increases when Russian forces fail on the battlefield. Russia targets civilians in non-combat regions at a disproportionately high rate, as showed by the percentage of such attacks that are directed towards civilian targets.
-
-
