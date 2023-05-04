@@ -3,8 +3,7 @@
 This project examines political violence in Ukraine from 2018 to the present day and focuses on civilian targeting during Russia’s full-scale invasion starting in 2022. The analysis shows that Russia’s civilian targeting increases in the areas tthey lose in the battle. The regions with only remote violence  experience higher percentages of civilian targeting than the ones engaged in the battles. The project concludes that Russia delibertely targets civilians in Ukraine. 
 ## Input Data
 There are two input files for this project. The data for the project was taken from The Armed Conflict Location & Event Data (ACLED’s) Ukraine Conflict Monitor that provides near real-time data on the war (https://acleddata.com/ukraine-conflict-monitor/#data). 
-The dataset **“Ukraine_Black_Sea_2020_2023_Mar24.xlsx”** includes information of event types from 2018 to present day in Ukraine and near Black Sea. 
-This project is based on a dataset downloaded on March 24, 2023. 
+The dataset **“Ukraine_Black_Sea_2020_2023_Mar24.xlsx”** includes information of event types from 2018 to March 24, 2023 in Ukraine and near Black Sea. 
 The second input file is a shapefile of Ukraine **“stanford-gg870xt4706-shapefile.zip”** taken from the University of Texas at Austin and is used to create maps (https://geodata.lib.utexas.edu/catalog/stanford-gg870xt4706). 
 ## Outputs
 1.	Three scripts that should be run in the following order:
@@ -23,3 +22,9 @@ The resulting map shows the percentage of civilian targeting for each region, wi
   - **region_names.csv** is a list of standardized names of regions in Ukraine that will be used to graph maps. 
 
 ## Results
+
+The **time series graph** shows the number of political violence events in the most affected regions from 2018 to the present day by months.
+Russia invaded east and south of Ukraine in 2014 which is represented by political violence in Donetsk and Luhansk prior to the full-scale invasion.
+The graph shows a rapid increase in political violence with full-scale invasion.
+
+
