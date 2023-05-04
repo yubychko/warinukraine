@@ -40,7 +40,7 @@ political_violence.to_csv('political_violence_ukraine.csv')
 regions = political_violence.query("ADMIN1=='Kyiv' or ADMIN1=='Kharkiv' or ADMIN1=='Zaporizhia' or ADMIN1=='Kherson' or ADMIN1=='Luhansk' or ADMIN1=='Donetsk'")
 print(regions['EVENT_TYPE'].value_counts())
 
-#%% Creating a time series graph to show political violence over the years in the most affected regions
+#%% Creating a time series graph to show political violence over the years in the most affected regions - intermediary graph
 # Count the number of attacks by year and administrative region
 size_violence = regions.groupby(['YEAR','ADMIN1']).size()
 # Reset the index and rename the count column

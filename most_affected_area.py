@@ -47,7 +47,7 @@ ukraine_map = ukraine_map.merge(attacks, left_on='std_name', right_on='ADMIN1', 
 ukraine_map.to_file('ukraine_map_std.shp')
 
 #%% Making a map that reflects the most affected areas based on number of attacks
-# Absolute counts - there is a very big difference between the regions abd the result is not very visible
+# Absolute counts - there is a very big difference between the regions abd the result is not very visible - intermediary map
 fig,ax = plt.subplots()
 ukraine_map.plot('count', ax=ax, legend=True, cmap='Reds',edgecolor='black', linewidth=0.25)
 ax.axis('off')
@@ -67,14 +67,12 @@ fig.suptitle('Most Affected Areas: Log 10')
 fig.tight_layout()
 fig.savefig('log10_of_attacks.png')
 
-# log10 is a base 10 log which means power numbers of ten 
-
 # Each region is colored based on the log10 of the number of political violence incidents that occurred in that region. 
 # The darker the color of a region, the higher the number of incidents.
 # The log10 transformation is used to better visualize the differences in magnitude between the regions, 
 # as the number of incidents can vary greatly between regions. 
 
-#%% Makinng a map of civilian targetting
+#%% Makinng a map of civilian targetting based on number of attacks
 fig,ax = plt.subplots()
 ukraine_map.plot('civilian_targeting', ax=ax, legend=True, cmap='Reds',edgecolor='black', linewidth=0.25)
 ax.axis('off')
