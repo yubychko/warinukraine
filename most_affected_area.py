@@ -14,10 +14,10 @@ political_violence = pd.read_csv('political_violence_ukraine.csv')
 # will read cleaned csv
 plt.rcParams['figure.dpi'] = 300 #setting dpi for higher quality 
 
-#%% selecting dates of the war
+#%% Selecting dates of the war
 war = political_violence.query("War==True")
 
-#%%
+#%% Reading Ukraine shapefile
 ukraine_map = gpd.read_file('stanford-gg870xt4706-shapefile.zip')
 
 for col in ukraine_map.columns:

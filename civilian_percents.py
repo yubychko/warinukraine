@@ -74,9 +74,7 @@ def calc_percent_civ_targeting(data, admin1_col='ADMIN1', targeting_col='CIVILIA
     return pivoted[[admin1_col, 'percent_civ_targeting']]
 
 
-#%%
-
-# Calculate the percentage of attacks that targeted civilians in each region
+#%% Calculating the percentage of attacks that targeted civilians in each region
 civ_targeting_by_region = calc_percent_civ_targeting(political_violence)
 
 print(civ_targeting_by_region)
@@ -114,7 +112,7 @@ merged_data['percent_civ_targeting'] = merged_data['percent_civ_targeting'].fill
 missing_kwds = {'color': 'gray'}
 
 
-#%% Plot percentage of civilian targeting on a map
+#%% Plotting percentage of civilian targeting on a map
 
 fig, ax = plt.subplots()
 merged_data.plot(column='percent_civ_targeting', ax=ax, legend=True, cmap='Reds',edgecolor='black', linewidth=0.25)

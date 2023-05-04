@@ -41,11 +41,13 @@ regions = political_violence.query("ADMIN1=='Kyiv' or ADMIN1=='Kharkiv' or ADMIN
 print(regions['EVENT_TYPE'].value_counts())
 
 #%% Creating a time series graph to show political violence over the years in the most affected regions - intermediary graph
+
 # Count the number of attacks by year and administrative region
 size_violence = regions.groupby(['YEAR','ADMIN1']).size()
 # Reset the index and rename the count column
 size_violence = size_violence.reset_index()
 size_violence = size_violence.rename(columns={0:'count'})
+
 # Plot a figure
 fig, ax1 = plt.subplots() 
 sns.lineplot(data=size_violence, x='YEAR', y='count', hue='ADMIN1', ax=ax1)
@@ -53,6 +55,7 @@ fig.tight_layout()
 fig.savefig('violence_timeseries.png')
 
 #%% Creating a data frame for political violence for months 
+
 # Count records by date and location
 event_violence = regions.groupby(['EVENT_DATE','ADMIN1']).size() 
 # Convert the data from long to wide format, with one column per region, and fill in missing values with zeros
@@ -91,7 +94,7 @@ relevant_data['Is Civilian Targeting'] = relevant_data['CIVILIAN_TARGETING'] == 
 # Group the data by event type and target category and count the number of occurrences of each
 grouped_data = relevant_data.groupby(['EVENT_TYPE', 'Is Civilian Targeting'])['Is Civilian Targeting'].count().unstack()
 
-# Plot the stacked bar graph
+#%% Plotting the stacked bar graph
 fig1, ax1 = plt.subplots()
 grouped_data.plot.barh(ax=ax1, stacked=True)
 ax1.set_xlabel("")
