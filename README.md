@@ -1,7 +1,7 @@
 # Analysis of Russia's Invasion of Ukraine
 
 ## Summary
-This project examines political violence in Ukraine from 2018 to the present day and focuses on civilian targeting during Russia’s full-scale invasion starting in 2022. The analysis shows that Russia’s civilian targeting increases in the areas tthey lose in the battle. The regions with only remote violence  experience higher percentages of civilian targeting than the ones engaged in the battles. The project concludes that Russia delibertely targets civilians in Ukraine.
+This project examines political violence in Ukraine from 2018 to the present day and focuses on civilian targeting during Russia’s full-scale invasion starting in 2022. The analysis shows that Russia’s civilian targeting increases in the areas they lose in the battle. The regions with only remote violence  experience higher percentages of civilian targeting than the ones engaged in the battles. The project concludes that Russia delibertely targets civilians in Ukraine.
 
 ## Input Data
 There are two input files for this project. The data for the project was taken from [The Armed Conflict Location & Event Data (ACLED’s) Ukraine Conflict Monitor](https://acleddata.com/ukraine-conflict-monitor/#data) that provides near real-time data on the war. 
